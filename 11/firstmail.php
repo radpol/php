@@ -1,0 +1,4 @@
+<?php
+mail("vaše@e-mailová_adresa.cz", "Nazdar, svìte!",
+  "Zdravíèko, pøiprav se na náš pøílet. Jsme hladoví!");
+?>

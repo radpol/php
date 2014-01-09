@@ -1,0 +1,15 @@
+<?php
+require 'class.SimpleMail.php';
+
+$message = new SimpleMail();
+
+$message->setToAddress('pøíjemce@priklad.cz');
+$message->setSubject('Test textové zprávy');
+$message->setTextBody('Tato zpráva byla odeslána jako prostý text!');
+
+if ($message->send()) {
+  echo 'Zpráva byla úspìšnì odeslána!';
+} else {
+  echo 'Odeslání zprávy se nezdaøilo!';
+}
+?>

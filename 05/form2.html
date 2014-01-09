@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Pozemské pozdravy</title>
+  </head>
+  <body>
+    <form action="zpracovat2.php" method="post">
+      <table>
+        <tr>
+          <td>Jméno</td>
+          <td><input type="text" name="jmeno" /></td>
+        </tr><tr>
+          <td>Pozdrav</td>
+          <td>
+            <select name="pozdrav">
+              <option value="Nazdar">Nazdar</option>
+              <option value="Hello">Hello</option>
+              <option value="Bonjour">Bonjour</option>
+            </select>
+          </td>
+        </tr><tr>
+          <td> </td>
+          <td>
+            <input type="checkbox" name="debug" checked="checked"/>
+            Zobrazit ladicí informace
+          </td>
+        </tr><tr>
+          <td colspan="2" style="text-align: center">
+            <input type="submit" name="tlacitko" value="Odeslat" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

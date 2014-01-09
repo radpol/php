@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Pošlete obrázek na náš web!</title>
+    <style type="text/css">
+      <!--
+      td {vertical-align: top;}
+      -->
+    </style>
+  </head>
+  <body>
+    <form action="check_image.php" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td>Uživatelské jméno</td>
+          <td><input type="text" name="username" /></td>
+        </tr><tr>
+          <td>Odeslat obrázek:</td>
+          <td>
+            <input type="hidden" name="MAX_FILE_SIZE"  value="262144"/>
+            <input type="file" name="uploadfile" />
+          </td>
+        </tr><tr>
+          <td colspan="2">
+            <small><em>* Pøípustné formáty obrázkù: GIF, JPG/JPEG a PNG.
+            </em></small>
+          </td>
+        </tr><tr>
+          <td>Název nebo popisek obrázku<br/>
+          </td>
+          <td><input type="text" name="caption" /></td>
+        </tr><tr>
+          <td colspan="2" style="text-align: center">
+            <input type="submit" name="submit" value="Odeslat"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

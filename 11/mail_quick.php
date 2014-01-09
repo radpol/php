@@ -1,0 +1,12 @@
+<?php
+require 'class.SimpleMail.php';
+
+$message = new SimpleMail();
+
+if ($message->send('pøíjemce@priklad.cz', 'Test rychlé zprávy',
+    'Toto je rychlý test metody SimpleMail->send().')) {
+  echo 'Zpráva byla úspìšnì odeslána!';
+} else {
+  echo 'Odeslání zprávy se nezdaøilo!';
+}
+?>
